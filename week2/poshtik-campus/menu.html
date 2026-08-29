@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Poshtik Campus - Menu</title>
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <p>Ten dishes, every one of them poshtik</p>
+        <ul>
+            <li>Jonna Rotte Wrap</li>
+            <li>Sajja Roti Wrap</li>
+            <li>Ragi Sangati Bowl</li>
+            <li>Ragi idli bowl</li>
+            <li>Pesarattu with Sprouts</li>
+            <li>Ulava Charu Protein Bowl</li>
+            <li>Gongura Sprouts Shake</li>
+            <li>Sprouts Moong Chilla</li>
+            <li>Paneer Protein Bowl</li>
+            <li>Millet Protein Shake</li>    
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+        <h2>Order from your phone</h2>
+        <form>
+            <p>
+                <label for="customer">Your name</label>
+                <input type="text" id="customer" name="customer">
+            </p>
+            <p>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+            <fieldset>
+                <legend>Choose your dish</legend>
+                <input type="radio" id="idli" name="dish" value="idli">
+                <label for="idli">Idli - 30rs</label><br>
+                <input type="radio" id="thali" name="dish" value="thali">
+                <label for="thali">Veg Thali - 60rs</label><br>
+                <input type="radio" id="curd" name="dish" value="curd-rice">
+                <label for="curd">Curd Rice - 35rs</label><br>
+            </fieldset>
+            <p>
+                <label for="qty">How many plates?</label>
+                <input type="number" id="qty" name="quantity" min="1" max="10" value="1">
+            </p>
+            <p>
+                <label for="notes">Anything else?</label>
+                <textarea id="notes" name="notes" rows="3" cols="30"></textarea>
+            </p>
+            <button type="submit">Place order</button>
+        </form>
+    </body>
+</html>
