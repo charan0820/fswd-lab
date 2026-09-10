@@ -1,0 +1,79 @@
+/* style.css — poshtik-campus, site-wide. Born Class 10. */
+body
+{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: floralwhite;  /* warm off-white */
+  color: black;
+}
+#page-header  /* Class 9's rule, kept */
+{
+  background-color: darkslategray;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+h1, h3
+{
+  color: seagreen;  /* the brand green */
+}
+.dish
+{
+  width: 300px;  /* Class 11 explains the box around this */
+  background-color: mintcream;  /* pale mint */
+  border: 2px solid seagreen;
+  padding: 12px;
+  margin: 12px 0;
+}
+.dish h3
+{
+  font-size: 18px;
+  font-weight: 600;
+}
+nav a
+{
+  color: seagreen;
+  text-decoration: none;
+}
+footer p
+{
+  text-align: center;
+}
+/* ===== Class 12 · phone layout — poshtik's first media query ===== */
+nav
+{
+  background-color: mintcream;
+  padding: 10px 16px;
+  border-bottom: 2px solid seagreen;
+}
+nav a
+{
+  margin-right: 18px;
+}
+form
+{
+  background-color: mintcream;
+  border: 2px solid seagreen;
+  padding: 16px;
+  width: 480px;
+}
+legend
+{
+  color: seagreen; font-weight: 600;
+}
+button
+{ background-color: seagreen; color: white; border: none; padding: 8px 16px;}
+@media (max-width: 600px)
+{
+  .dish
+  {
+    width: 100%;  /* was 300px — now the full glass */
+  }
+  form
+  {
+    width: 100%;  /* was 480px — wider than many phones! */
+  }
+  h1
+  {
+    font-size: 22px;  /* headline, not billboard */
+  }
+}
