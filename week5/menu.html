@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poshtik Campus — Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="page-header">
+    <img src="images/poshtik-campus-logo.jpg" alt="Poshtik Campus logo" width="90">
+    <h1>Poshtik Campus Menu</h1>
+    <p>Healthy Food, Healthy Body, Healthy Mind</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+
+    <h2>Today's Healthy Ten</h2>
+
+    <section id="dish-list"></section>
+
+    <h2>Order Here</h2>
+
+    <form id="order-form" novalidate>
+      <p>
+        <label for="cust-name">Your name</label><br>
+        <input type="text" id="cust-name" name="cust-name">
+      </p>
+      <p>
+        <label for="cust-phone">Phone number</label><br>
+        <input type="tel" id="cust-phone" name="cust-phone">
+      </p>
+      <fieldset>
+        <legend>Pick your dish</legend>
+        <label><input type="radio" id="dish-0" name="dish" value="jonna-rotte-wrap"> Jonna Rotte Wrap</label><br>
+        <label><input type="radio" id="dish-1" name="dish" value="sajja-roti-wrap"> Sajja Roti Wrap</label><br>
+        <label><input type="radio" id="dish-2" name="dish" value="ragi-sangati-bowl"> Ragi Sangati Bowl</label><br>
+        <label><input type="radio" id="dish-3" name="dish" value="ragi-idli-bowl"> Ragi Idli Bowl</label><br>
+        <label><input type="radio" id="dish-4" name="dish" value="pesarattu-with-sprouts"> Pesarattu with Sprouts</label><br>
+        <label><input type="radio" id="dish-5" name="dish" value="ulava-charu-protein-bowl"> Ulava Charu Protein Bowl</label><br>
+        <label><input type="radio" id="dish-6" name="dish" value="gongura-sprouts-salad"> Gongura Sprouts Salad</label><br>
+        <label><input type="radio" id="dish-7" name="dish" value="sprouts-moong-chilla"> Sprouts Moong Chilla</label><br>
+        <label><input type="radio" id="dish-8" name="dish" value="paneer-protein-bowl"> Paneer Protein Bowl</label><br>
+        <label><input type="radio" id="dish-9" name="dish" value="millet-protein-shake"> Millet Protein Shake</label>
+      </fieldset>
+      <p>
+        <label for="qty">Quantity</label><br>
+        <input type="number" id="qty" name="qty" min="1" max="10" value="1">
+      </p>
+      <p>
+        <label for="notes">Notes for the kitchen</label><br>
+        <textarea id="notes" name="notes" rows="3" cols="40"></textarea>
+      </p>
+      <p>
+        <button type="submit">Place order</button>
+        <button type="button" id="check-order">Check my order</button>
+      </p>
+    </form>
+    <p id="order-result"></p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Poshtik Campus &middot; orders@poshtikcampus.in</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
